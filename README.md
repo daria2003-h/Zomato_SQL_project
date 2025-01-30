@@ -48,7 +48,7 @@ CREATE TABLE orders
 		total_amount FLOAT
 		);
 
---adding constraint
+--adding constraints
 
 ALTER TABLE orders
 ADD CONSTRAINT fk_customers
@@ -88,3 +88,16 @@ ADD CONSTRAINT fk_riders
 FOREIGN KEY (rider_id)
 REFERENCES riders(rider_id);
 ```
+The Entity-Relationship (ER) model for this database is structured as follows
+## Data Import
+
+## Data Cleaning and Handling Null Values
+
+Before performing analysis, I ensured that the data was clean and free from null values where necessary. For instance:
+
+```sql
+UPDATE orders
+SET total_amount = COALESCE(total_amount, 0);
+```
+
+## Business Problems Solved
