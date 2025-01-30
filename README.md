@@ -128,8 +128,11 @@ WHERE rank <=5;
 ```
 ### 2. Popular Time Slots
 Question: Identify the time slots during which the most orders are placed. based on 2-hour intervals.
--**Logic**
+
+Logic
+
 -00:59:59 AM --then 0
+
 -01:59:59 AM --then 1
 
 Approach 1
