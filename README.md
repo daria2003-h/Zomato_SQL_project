@@ -89,6 +89,7 @@ FOREIGN KEY (rider_id)
 REFERENCES riders(rider_id);
 ```
 The Entity-Relationship (ER) model for this database is structured as follows
+![ERD Zomato DB](https://github.com/daria2003-h/Zomato_SQL_project/blob/main/zomato_erd.png)
 ## Data Import
 
 ## Data Cleaning and Handling Null Values
