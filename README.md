@@ -128,9 +128,9 @@ WHERE rank <=5;
 ```
 ### 2. Popular Time Slots
 Question: Identify the time slots during which the most orders are placed. based on 2-hour intervals.
-Logic
-00:59:59 AM --then 0
-01:59:59 AM --then 1
+*Logic
+-00:59:59 AM --then 0
+-01:59:59 AM --then 1
 
 Approach 1
 ```sql
@@ -357,9 +357,10 @@ FROM t1;
 ```
 ### 12. Customer Segmentation: 
 Customer Segmentation: Segment customers into 'Gold' or 'Silver' groups based on their total spending 
-**compared to the average order value (AOV). If a customer's total spending exceeds the AOV, 
-**label them as 'Gold'; otherwise, label them as 'Silver'. Write an SQL query to determine each segment's 
-**total number of orders and total revenue
+*compared to the average order value (AOV). If a customer's total spending exceeds the AOV, 
+*label them as 'Gold'; otherwise, label them as 'Silver'. 
+*Write an SQL query to determine each segment's 
+total number of orders and total revenue
 ```sql
 --Customer segmentation
 WITH 
@@ -426,11 +427,11 @@ ORDER BY total DESC;
 ```
 
 ### 14. Rider Ratings Analysis: 
-**Find the number of 5-star, 4-star, and 3-star ratings each rider has.
+*Find the number of 5-star, 4-star, and 3-star ratings each rider has.
 riders receive this rating based on delivery time.
-**If orders are delivered less than 15 minutes of order received time the rider get 5 star rating,
-**if they deliver 15 and 20 minute they get 4 star rating 
-**if they deliver after 20 minute they get 3 star rating.
+-If orders are delivered less than 15 minutes of order received time the rider get 5 star rating,
+-if they deliver 15 and 20 minute they get 4 star rating 
+-if they deliver after 20 minute they get 3 star rating.
 ```sql
 WITH 
 t1 AS
