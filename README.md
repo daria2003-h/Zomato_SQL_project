@@ -29,14 +29,14 @@ CREATE TABLE customers
 		customer_name VARCHAR(25),
 		reg_date DATE
 		);
-```sql
+
 CREATE TABLE restaurant
 		(restaurant_id INT PRIMARY KEY,
 		restaurant_name VARCHAR(55),
 		city VARCHAR(55),
 		opening_hours VARCHAR(55)
 		);
-```sql
+
 CREATE TABLE orders
 		(order_id INT PRIMARY KEY,
 		customer_id INT,--comes from customer table
@@ -49,25 +49,25 @@ CREATE TABLE orders
 		);
 
 --adding constraint
-```sql
+
 ALTER TABLE orders
 ADD CONSTRAINT fk_customers
 FOREIGN KEY (customer_id)
 REFERENCES customers(customer_id);
 
-```sql
+
 ALTER TABLE orders
 ADD CONSTRAINT fk_restaurant
 FOREIGN KEY (restaurant_id)
 REFERENCES restaurant(restaurant_id);
 
-```sql
+
 CREATE TABLE riders
 		(rider_id INT PRIMARY KEY,
 		rider_name VARCHAR(55),
 		sign_up DATE
 		);
-```sql
+
 CREATE TABLE deliveries
 		(delivery_id INT PRIMARY KEY,
 		order_id INT,--comes from orders table
@@ -75,7 +75,7 @@ CREATE TABLE deliveries
 		delivery_time TIME,
 		rider_id INT--comes from riders table
 );
-```sql
+
 --adding constraints
 
 ALTER TABLE deliveries
@@ -87,3 +87,4 @@ ALTER TABLE deliveries
 ADD CONSTRAINT fk_riders
 FOREIGN KEY (rider_id)
 REFERENCES riders(rider_id);
+```
