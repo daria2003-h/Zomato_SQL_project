@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS restaurants;
 DROP TABLE IF EXISTS riders;
 
 ### 2. Creating Tables
-```sql
+
 CREATE TABLE customers
 		(customer_id INT PRIMARY KEY,
 		customer_name VARCHAR(25),
@@ -82,7 +82,7 @@ ALTER TABLE deliveries
 ADD CONSTRAINT fk_orders
 FOREIGN KEY (order_id)
 REFERENCES orders(order_id);
-```sql
+
 ALTER TABLE deliveries
 ADD CONSTRAINT fk_riders
 FOREIGN KEY (rider_id)
