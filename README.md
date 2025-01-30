@@ -595,3 +595,9 @@ FROM orders AS o
 WHERE EXTRACT(YEAR FROM order_date)=2023
 GROUP BY r.city;
 ```
+## Conclusion
+
+This project highlights my ability to handle  SQL queries and provides solutions to real-world business problems in the context of a food delivery service like Zomato. The approach taken here demonstrates a structured problem-solving methodology, data manipulation skills, and the ability to derive actionable insights from data.
+
+## Notice 
+All customer names and data used in this project are computer-generated using AI and random functions. 
